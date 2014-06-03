@@ -1,0 +1,4 @@
+Checkers
+========
+
+Java, multiplayer checkers
