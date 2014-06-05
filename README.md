@@ -3,6 +3,9 @@ Checkers
 
 Java, multiplayer checkers
 
+I've created an IRC channel on freenode, #period9developers
+It's accessible through the web at http://webchat.freenode.net/?channels=Period9Developers
+
 ### How to use this repo in eclipse
  1. Copy the HTTPS clone URL to the right ------>
  2. Open eclipse
@@ -14,4 +17,3 @@ Java, multiplayer checkers
  8. Go to New Java Project
  9. Name it and uncheck Use default location, paste the destination directory from step 7 into the location box
  10. Click Finish and you have successfully cloned the Git repository and imported it as a java project!
-11. Go back to 1
