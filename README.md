@@ -14,3 +14,4 @@ Java, multiplayer checkers
  8. Go to New Java Project
  9. Name it and uncheck Use default location, paste the destination directory from step 7 into the location box
  10. Click Finish and you have successfully cloned the Git repository and imported it as a java project!
+11. Go back to 1
