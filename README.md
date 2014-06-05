@@ -1,7 +1,7 @@
 Checkers
 ========
 
-**Java**, multiplayer checkers
+Java, multiplayer checkers
 
 ### How to use this repo in eclipse
  1. Copy the HTTPS clone URL to the right ------>
