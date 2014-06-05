@@ -6,6 +6,8 @@ Java, multiplayer checkers
 I've created an IRC channel on freenode, #period9developers
 It's accessible through the web at http://webchat.freenode.net/?channels=Period9Developers
 
+Reference: http://en.wikipedia.org/wiki/Draughts
+
 ### How to use this repo in eclipse
  1. Copy the HTTPS clone URL to the right ------>
  2. Open eclipse
