@@ -1,10 +1,12 @@
 package app;
 
-import java.util.ArrayList;
+import java.util.*;
 import java.util.List;
 
 public class Board {
+	
 	public List<Tile> tileList = new ArrayList<Tile>(); //Creates a List object consisting of Tile objects
+	
 	public Board(int size) {
 		int startRows = (size-2)/2;
 		if(size==8 || size==10 || size==12){ // These are the only sizes of checker boards
@@ -33,13 +35,39 @@ public class Board {
 			System.err.println("Error, board must be 8, 10, or 12 tiles in size"); //Handle board size 
 		}
 	}
-	 
-	public void Move(Tile tile0, Tile tile1, int player) {
-		tile0.state = 0;
-		tile1.state = player;
+	
+	public boolean checkEndGame() {
+		int player1 = 0;
+		int player2 = 0;
+		for(int i=1;i<=tileList.size();i++) {
+				if (tileList.get(i).state == 1)
+					player1++;
+				else if (tileList.get(i).state == 2)
+					player2++;
+			}
+		return (player1 == 0 || player2 == 0);
 	}
 	
-	public void Kill(Tile tile, int player) {
+	public void restartGame(int size) {
+		int startRows = (size-2)/2;
+		for(int x=1;x<=size;x++){
+			for(int y=1;y<=size;y++) {
+				if((x%2==0)^(y%2==0)) {
+					if(x<=startRows){
+						tileList.add(new Tile(2, x, y)); 
+					}
+					else if(x>startRows+2) {
+						tileList.add(new Tile(1, x, y));
+					}
+					else {
+						tileList.add(new Tile(0, x, y));
+					}
+				}
+				else {
+					tileList.add(new Tile(0,x,y));
+				}
+			}
+		}
 		
 	}
 }
