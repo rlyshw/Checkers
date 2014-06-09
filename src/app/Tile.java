@@ -13,4 +13,8 @@ public class Tile {
 		System.out.println("x: "+x+" y: "+y);
 		System.out.println("State: "+state);
 	}
+	
+	public void turnOn(int player) {
+		
+	}
 }

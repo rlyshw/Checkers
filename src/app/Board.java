@@ -33,4 +33,13 @@ public class Board {
 			System.out.println("Error, board must be 8, 10, or 12 tiles in size"); //Handle board size 
 		}
 	}
+	 
+	public void Move(Tile tile0, Tile tile1, int player) {
+		tile0.state = 0;
+		tile1.state = player;
+	}
+	
+	public void Kill(Tile tile, int player) {
+		
+	}
 }
