@@ -6,10 +6,10 @@ public class Tile {
 	int x; // x pos of tile
 	int y; // y pos of tile
 	
-	public Tile(int startState, int x1, int y1) { // init the object
+	public Tile(int startState, int x, int y) { // init the object
 		state = startState;
-		x=x1;
-		y=y1;
+		this.x=x;
+		this.y=y;
 		System.out.println("x: "+x+" y: "+y);
 		System.out.println("State: "+state);
 	}

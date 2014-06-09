@@ -30,7 +30,7 @@ public class Board {
 			}
 		}
 		else{
-			System.out.println("Error, board must be 8, 10, or 12 tiles in size"); //Handle board size 
+			System.err.println("Error, board must be 8, 10, or 12 tiles in size"); //Handle board size 
 		}
 	}
 	 
